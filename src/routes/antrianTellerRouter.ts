@@ -47,9 +47,9 @@ router.get('/:id', async (req, res, next) => {
 //@route    DELETE /simple-bank/antrian-cs/
 //@desc     Hapus semua antrian Teller
 router.delete('/', async (req, res, next) => {
-   let cusser
+   let tellers
    try {
-      cusser = await antrianTellerClient.deleteData()
+      tellers = await antrianTellerClient.deleteData()
    } catch (error) {
       return next(error)
    }
