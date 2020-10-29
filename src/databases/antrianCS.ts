@@ -11,6 +11,8 @@ admin.initializeApp({
 
 // admin.firestore() -> Jenis database
 // collection() -> memilih collection di database
+// Jika di database tidak ada collection yg dimaksud, secara otomatis
+// akan membuat collection baru sesuai nama yg direferensikan
 const antrianCSRef = admin.firestore().collection('antrianCS')
 
 // Method menambahkan angka 0 dengan digit tertentu di depan sebuah angka
